@@ -81,9 +81,9 @@ spec {
   }
  }
 }
-resource "kubernetes_service" "wordpresslb" {
+resource "kubernetes_service" "abhilb" {
  metadata {
-  name = "wordpressloadbalancer"
+  name = "abhilb"
  }
  spec {
   selector = {
