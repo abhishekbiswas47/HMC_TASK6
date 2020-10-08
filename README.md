@@ -25,4 +25,17 @@ Amazon Relational Database Service is a distributed relational database service 
 
 •Terraform tool
 
-## 
+#### Step 1 : 
+Write an Infrastructure as code using Terraform, which automatically deploys the WordPress application.
+
+First We need to specify the region and profile name for setting up the provider in Terraform.
+
+    provider "aws"{
+        region = "ap-south-1"
+        shared_credentials_file = "C:/Users/mamatha/Downloads/new_user_credentials(1).csv"
+        profile = "Mamatha"
+    }
+
+    provider "kubernetes" {
+    config_context_cluster = "minikube"
+    }
