@@ -110,8 +110,8 @@ resource "aws_db_instance" "database" {
   engine_version       = "5.7.30"
   instance_class       = "db.t2.micro"
   name                 = "dbs"
-  username             = "Mamatha"
-  password             = "mamatha123"
+  username             = "Abhishek"
+  password             = "Abhishek123"
   parameter_group_name = "default.mysql5.7"
   publicly_accessible  =true
   iam_database_authentication_enabled = true
