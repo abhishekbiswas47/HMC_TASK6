@@ -48,7 +48,7 @@ main.tf file-:
 Now we will write wordpress.tf
 
 ```
-resource "kubernetes_deployment" "involve" {
+resource "kubernetes_deployment" "abhipress" {
  metadata {
   name = "wordpressapplication"
  }
@@ -109,7 +109,7 @@ Now we should write terraform code for MySQL rds that creates MySQL database usi
 provider "aws"{
 region="ap-south-1"
 }
-resource "aws_db_instance" "database" {
+resource "aws_db_instance" "abhidb" {
   allocated_storage    = 10
   storage_type         = "gp2"
   engine               = "mysql"
