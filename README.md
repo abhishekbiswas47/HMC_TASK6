@@ -28,10 +28,9 @@ Amazon Relational Database Service is a distributed relational database service 
 #### Step 1 : 
 Write an Infrastructure as code using Terraform, which automatically deploys the WordPress application.
 
-```
 main.tf file-:
 
-resource "null_resource" "minikubeservice" {
+```resource "null_resource" "minikubeservice" {
 	  provisioner "local-exec" {
 	    command = "minikube service list"
 	    
