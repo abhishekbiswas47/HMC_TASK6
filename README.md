@@ -39,4 +39,5 @@ First We need to specify the region and profile name for setting up the provider
     provider "kubernetes" {
     config_context_cluster = "minikube"
     }
+
 #### 
