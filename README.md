@@ -148,7 +148,7 @@ To destroy the environment created above we ca use the command-:
 ```
 terraform destroy --auto-approve
 ```
-Here are few screenshots:-
+##### Here are few screenshots:-
 ![alt text](https://github.com/abiswah/HMC_TASK6/blob/main/20201008_204444.jpg)
 ![alt text](https://github.com/abiswah/HMC_TASK6/blob/main/IMG-20201008-WA0007.jpg)
 ![alt text](https://github.com/abiswah/HMC_TASK6/blob/main/IMG-20201008-WA0008.jpg)
