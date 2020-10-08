@@ -22,6 +22,7 @@ Amazon Relational Database Service is a distributed relational database service 
 •AWS account
 
 •Minikube (as I am going to perform over minikube)
-Terraform tool
+
+•Terraform tool
 
 ## 
