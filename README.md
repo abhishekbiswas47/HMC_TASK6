@@ -46,7 +46,8 @@ main.tf file-:
 #### Step 2 :
 Now we will write wordpress.tf
 
-```resource "kubernetes_deployment" "involve" {
+```
+resource "kubernetes_deployment" "involve" {
  metadata {
   name = "wordpressapplication"
  }
@@ -103,7 +104,8 @@ Use RDS service for the relational database for Wordpress application.
 
 Now we should write terraform code for MySQL rds that creates MySQL database using rds.
 
-```provider "aws"{
+```
+provider "aws"{
 region="ap-south-1"
 }
 resource "aws_db_instance" "database" {
