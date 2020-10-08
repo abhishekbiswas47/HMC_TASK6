@@ -130,3 +130,21 @@ tags={
 }
 ``` 
 #### Step 4 : 
+To use our terraform code first we have to initialize it by using this command-:
+```
+terraform init
+```
+```
+terraform validate
+```
+after that we have to run this command and the terraform will perform the task.
+```
+terraform apply --auto-approve
+```
+It will print url for getting wordpress dashboard and rdb ip so that we can connect the wordpress and rdb .
+
+to destroy the environment created above we ca use the command-:
+
+```
+terraform destroy --auto-approve
+```
