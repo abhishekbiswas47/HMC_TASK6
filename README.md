@@ -41,7 +41,7 @@ First We need to specify the region and profile name for setting up the provider
     }
 
 #### Step 2 :
-now we will write wordpress.tf
+Now we will write wordpress.tf
 
 ```resource "kubernetes_deployment" "involve" {
  metadata {
