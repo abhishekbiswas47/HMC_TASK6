@@ -30,7 +30,8 @@ Write an Infrastructure as code using Terraform, which automatically deploys the
 
 main.tf file-:
 
-```resource "null_resource" "minikubeservice" {
+```
+          resource "null_resource" "minikubeservice" {
 	  provisioner "local-exec" {
 	    command = "minikube service list"
 	    
