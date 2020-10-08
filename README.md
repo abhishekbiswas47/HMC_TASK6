@@ -2,8 +2,8 @@
 ### Task Description
 Deploy the Wordpress application on Kubernetes and AWS using terraform including the following steps;
 
-1.  Write an Infrastructure as code using terraform, which automatically deploy the Wordpress application
-2.  On AWS, use RDS service for the relational database for Wordpress application.
+1. Write an Infrastructure as code using terraform, which automatically deploy the Wordpress application
+2. On AWS, use RDS service for the relational database for Wordpress application.
 3. Deploy the Wordpress as a container either on top of Minikube or EKS or Fargate service on AWS
 4. The Wordpress application should be accessible from the public world if deployed on AWS or through workstation if deployed on Minikube.
 
@@ -28,18 +28,21 @@ Amazon Relational Database Service is a distributed relational database service 
 #### Step 1 : 
 Write an Infrastructure as code using Terraform, which automatically deploys the WordPress application.
 
-First We need to specify the region and profile name for setting up the provider in Terraform.
+```main.tf file-:
 
-    provider "aws"{
-        region = "ap-south-1"
-        shared_credentials_file = "C:/Users/mamatha/Downloads/new_user_credentials(1).csv"
-        profile = "Mamatha"
-    }
-
-    provider "kubernetes" {
-    config_context_cluster = "minikube"
-    }
-
+resource "null_resource" "minikubeservice" {
+	  provisioner "local-exec" {
+	    command = "minikube service list"
+	    
+	  }
+	  depends_on = [
+	      kubernetes_deployment.abhipress,
+	      kubernetes_service.abhilb,
+	      aws_db_instance.abhidb
+	 
+	     ]
+	}
+```
 #### Step 2 :
 Now we will write wordpress.tf
 
